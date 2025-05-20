@@ -29,18 +29,8 @@ graph LR
     Proto3 --> Server3
 
     %% Optional: Align elements vertically
-    rank same
-        MC1
-        Proto1
-        Server1
-    rank same
-        MC2
-        Proto2
-        Server2
-    rank same
-        MC3
-        Proto3
-        Server3
-
+    rank same MC1 Proto1 Server1
+    rank same MC2 Proto2 Server2
+    rank same MC3 Proto3 Server3
 ```
 
