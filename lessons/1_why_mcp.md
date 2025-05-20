@@ -28,6 +28,4 @@ graph LR
     %% AI App 3
     App3[AI App 3] --> A3[Custom implementation] --> B3[Custom prompt logic] --> C3[Custom tool calls] --> D3[Custom data access]
 
-    %% For spacing and alignment
-    App2 -->| | App3
 ```
