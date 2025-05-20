@@ -6,13 +6,13 @@ MCP is an open protocol that standardizes the way how your LLM aplication connec
 
 # Protocols
 
-## Rest APIs
+### Rest APIs
 Standardize how web app interact with the backend.
 
-## LSP
+### LSP
 Standardize how IDEs interact with Language-specific tools.
 
-## MCP
+### MCP
 Standardize how LLM apps interact with external systems.
 
 # Whitout MCP: Fragmented AI Development
@@ -28,6 +28,21 @@ graph LR
     %% AI App 3
     App3[AI App 3] --> A3[Custom implementation] --> B3[Custom prompt logic] --> C3[Custom tool calls] --> D3[Custom data access]
 
-    %% For spacing and alignment
-    App2 -->| | App3
+```
+
+# With MCP: Standardized AI Development
+
+```mermaid
+graph LR
+    subgraph MCP_Compatible_Application [MCP Compatible Application]
+        LLM[LLM]
+    end
+
+    MCP_Compatible_Application --> DSMCP[Data Store MCP]
+    MCP_Compatible_Application --> CRMMCP[CRM MCP Server]
+    MCP_Compatible_Application --> VCSMCP[Version Control MCP Server]
+
+    DSMCP --> DS[Data Store]
+    CRMMCP --> CRMS[CRM Systems]
+    VCSMCP --> VCS[Version Control Software]
 ```
