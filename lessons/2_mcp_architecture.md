@@ -53,18 +53,20 @@ Pre-defined templates for AI interactions
 # MC Transport
 
 How messages are sent between MCP Clients and MCP Servers
+![Screenshot 2025-05-23 at 12 58 34](https://github.com/user-attachments/assets/a04c6c9b-8995-4d39-972c-eebbf35ae7a1)
 
 1. For servers running locally: stdio (standard input/output)
 2. For servers running remotely:
   - HTTP + SSE (Server Sent Events) (from protocol version 2024-11-05)
   - Streamable HTTP (from protocol version 2025-03-26) 
 
-
 ## Stdio
 Client launches the server as a sub process, and the server process writes to stdout and reads from stdin.
+![Screenshot 2025-05-23 at 13 04 56](https://github.com/user-attachments/assets/69e5b0f1-3d6d-4846-bf60-85a8b5e90742)
 
 ## HTTP + SSE / Streamable HTTP
 Client makes HTTP requests to the server, and the server sends responses back to the client.
+![Screenshot 2025-05-23 at 13 10 15](https://github.com/user-attachments/assets/198b5313-c2da-467e-9f6d-1d4d6ea70be4)
 
 
 
