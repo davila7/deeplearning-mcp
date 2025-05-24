@@ -1,0 +1,48 @@
+{
+  "1104.3954v1": {
+    "title": "Invariant Algebras",
+    "authors": [
+      "Keqin Liu"
+    ],
+    "summary": "We introduce invariant algebras and representation$^{(c_1,..., c_8)}$ of\nalgebras, and give many ways of constructing Lie algebras, Jordan algebras,\nLeibniz algebras, pre-Lie algebras and left-symmetric algebras in an invariant\nalgebras.",
+    "pdf_url": "http://arxiv.org/pdf/1104.3954v1",
+    "published": "2011-04-20"
+  },
+  "math/0501518v2": {
+    "title": "Deformation of algebras over the Landweber-Novikov algebra",
+    "authors": [
+      "Donald Yau"
+    ],
+    "summary": "An algebraic deformation theory of algebras over the Landweber-Novikov\nalgebra is obtained.",
+    "pdf_url": "http://arxiv.org/pdf/math/0501518v2",
+    "published": "2005-01-28"
+  },
+  "1012.2844v1": {
+    "title": "Hopf-like Algebras and Extended P-B-W Theorems",
+    "authors": [
+      "Keqin Liu"
+    ],
+    "summary": "Based on invariant algebras, we introduce representations$^{6-th}$ of Lie\nalgebras and representations$^{< 4-th>}$ of Leibniz algebras, give the extended\nP-B-W Theorems in the context of the new representations of Lie algebras and\nLeibniz algebras, and generalize the Hopf-algebra structure on the enveloping\nalgebras of Lie Algebras.",
+    "pdf_url": "http://arxiv.org/pdf/1012.2844v1",
+    "published": "2010-12-13"
+  },
+  "1607.02068v1": {
+    "title": "Deformation quantization of vertex Poisson algebras",
+    "authors": [
+      "Shintarou Yanagida"
+    ],
+    "summary": "We introduce dg Lie algebras controlling the deformations of vertex algebras\nand vertex Poisson algebras, utilizing the notion of operadic dg Lie algebra\nand the theory of chiral algebra. In terms of those dg Lie algebras, we\nformulate the deformation quantization problem of vertex Poisson algebras to\nvertex algebras.",
+    "pdf_url": "http://arxiv.org/pdf/1607.02068v1",
+    "published": "2016-07-07"
+  },
+  "math/0506093v1": {
+    "title": "Symplectic reflection algebras and non-homogeneous N-Koszul property",
+    "authors": [
+      "Roland Berger",
+      "Victor Ginzburg"
+    ],
+    "summary": "From symplectic reflection algebras, some algebras are naturally introduced.\nWe show that these algebras are non-homogeneous N-Koszul algebras, through a\nPBW theorem.",
+    "pdf_url": "http://arxiv.org/pdf/math/0506093v1",
+    "published": "2005-06-06"
+  }
+}

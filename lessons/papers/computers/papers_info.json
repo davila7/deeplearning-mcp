@@ -1,0 +1,50 @@
+{
+  "1310.7911v2": {
+    "title": "Compact manifolds with computable boundaries",
+    "authors": [
+      "Zvonko Iljazovic"
+    ],
+    "summary": "We investigate conditions under which a co-computably enumerable closed set\nin a computable metric space is computable and prove that in each locally\ncomputable computable metric space each co-computably enumerable compact\nmanifold with computable boundary is computable. In fact, we examine the notion\nof a semi-computable compact set and we prove a more general result: in any\ncomputable metric space each semi-computable compact manifold with computable\nboundary is computable. In particular, each semi-computable compact\n(boundaryless) manifold is computable.",
+    "pdf_url": "http://arxiv.org/pdf/1310.7911v2",
+    "published": "2013-10-29"
+  },
+  "math/9711204v1": {
+    "title": "Aspects of Computability in Physics",
+    "authors": [
+      "Joseph Shipman"
+    ],
+    "summary": "This paper reviews connections between physics and computation, and explores\ntheir implications. The main topics are computational \"hardness\" of physical\nsystems, computational status of fundamental theories, quantum computation, and\nthe Universe as a computer.",
+    "pdf_url": "http://arxiv.org/pdf/math/9711204v1",
+    "published": "1997-11-25"
+  },
+  "2208.00733v1": {
+    "title": "The Rise of Quantum Internet Computing",
+    "authors": [
+      "Seng W. Loke"
+    ],
+    "summary": "This article highlights quantum Internet computing as referring to\ndistributed quantum computing over the quantum Internet, analogous to\n(classical) Internet computing involving (classical) distributed computing over\nthe (classical) Internet. Relevant to quantum Internet computing would be areas\nof study such as quantum protocols for distributed nodes using quantum\ninformation for computations, quantum cloud computing, delegated verifiable\nblind or private computing, non-local gates, and distributed quantum\napplications, over Internet-scale distances.",
+    "pdf_url": "http://arxiv.org/pdf/2208.00733v1",
+    "published": "2022-08-01"
+  },
+  "2504.07020v1": {
+    "title": "Computably discrete represented spaces",
+    "authors": [
+      "Eike Neumann",
+      "Arno Pauly",
+      "C\u00e9cilia Pradic",
+      "Manlio Valenti"
+    ],
+    "summary": "In computable topology, a represented space is called computably discrete if\nits equality predicate is semidecidable. While any such space is classically\nisomorphic to an initial segment of the natural numbers, the\ncomputable-isomorphism types of computably discrete represented spaces exhibit\na rich structure. We show that the widely studied class of computably\nenumerable equivalence relations (ceers) corresponds precisely to the\ncomputably Quasi-Polish computably discrete spaces. We employ computably\ndiscrete spaces to exhibit several separating examples in computable topology.\nWe construct a computably discrete computably Quasi-Polish space admitting no\ndecidable properties, a computably discrete and computably Hausdorff\nprecomputably Quasi-Polish space admitting no computable injection into the\nnatural numbers, a two-point space which is computably Hausdorff but not\ncomputably discrete, and a two-point space which is computably discrete but not\ncomputably Hausdorff. We further expand an example due to Weihrauch that\nseparates computably regular spaces from computably normal spaces.",
+    "pdf_url": "http://arxiv.org/pdf/2504.07020v1",
+    "published": "2025-04-09"
+  },
+  "2403.03925v1": {
+    "title": "Consciousness qua Mortal Computation",
+    "authors": [
+      "Johannes Kleiner"
+    ],
+    "summary": "Computational functionalism posits that consciousness is a computation. Here\nwe show, perhaps surprisingly, that it cannot be a Turing computation. Rather,\ncomputational functionalism implies that consciousness is a novel type of\ncomputation that has recently been proposed by Geoffrey Hinton, called mortal\ncomputation.",
+    "pdf_url": "http://arxiv.org/pdf/2403.03925v1",
+    "published": "2024-03-06"
+  }
+}
