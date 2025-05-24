@@ -1,0 +1,11 @@
+[project]
+name = "deeplearning-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.9.1",
+    "wikipedia>=1.4.0",
+    "wikipedia-api>=0.8.1",
+]

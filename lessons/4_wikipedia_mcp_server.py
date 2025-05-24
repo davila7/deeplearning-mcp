@@ -10,7 +10,7 @@ WIKI_DIR = "wiki_articles"
 # Initialize FastMCP server
 mcp = FastMCP("research")
 
-@mcp.tool
+@mcp.tool()
 def search_articles(topic: str, max_results: int = 5) -> List[str]:
     """
     Search for articles on Wikipedia based on a topic and store their information.
@@ -78,7 +78,7 @@ def search_articles(topic: str, max_results: int = 5) -> List[str]:
     
     return article_titles
 
-@mcp.tool
+@mcp.tool()
 def extract_info(article_title: str) -> str:
     """
     Search for information about a specific article across all topic directories.
@@ -106,7 +106,7 @@ def extract_info(article_title: str) -> str:
     
     return f"There's no saved information related to article '{article_title}'."
 
-@mcp.tool
+@mcp.tool()
 def get_article_content(article_title: str) -> str:
     """
     Get the full content of a Wikipedia article.
