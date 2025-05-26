@@ -1,5 +1,5 @@
 from mcp import ClientSession, StdioServerParameters, types
-from mcp.client.stdioimport import stdio_client
+from mcp.client.stdio import stdio_client
 
 # Create server parameters for stdio connection
 server_params = StdioServerParameters(
