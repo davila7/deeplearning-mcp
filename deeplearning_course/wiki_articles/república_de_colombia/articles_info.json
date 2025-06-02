@@ -1,0 +1,33 @@
+{
+  "Colombia": {
+    "title": "Colombia",
+    "error": "disambiguation",
+    "options": [
+      "Columbia (personification)",
+      "Columbia University",
+      "Columbia Pictures",
+      "Columbia Sportswear",
+      "Columbia, South Carolina"
+    ]
+  },
+  "Gran Colombia": {
+    "title": "Gran Colombia",
+    "error": "page_not_found"
+  },
+  "Flag of Colombia": {
+    "title": "Flag of Colombia",
+    "summary": "The national flag of Colombia symbolizes its independence from Spain, won on 20 July 1810. It is a rectangular horizontal tricolor composed of yellow, blue and red in a 2:1:1 ratio. The yellow stripe takes up a half of the flag, while the blue and red stripes take up a quarter each. Its origins date back to the flag of Gran Colombia created by Francisco de Miranda in the early 1800s. It was officially adopted by law on 26 November 1861.",
+    "url": "https://en.wikipedia.org/wiki/Flag_of_Colombia",
+    "content_length": 4707
+  },
+  "National Anthem of Colombia": {
+    "title": "National Anthem of Colombia",
+    "summary": "The National Anthem of the Republic of Colombia is the official name of the national anthem of Colombia. It was originally written as a poem in 1850 by future President Rafael N\u00fa\u00f1ez as an ode to celebrate the independence of Cartagena. The music was composed by Italian-born opera musician Oreste S\u00edndici, at the request of Bogotan actor Jos\u00e9 Domingo Torres, during the presidency of N\u00fa\u00f1ez, and with lyrics refined by N\u00fa\u00f1ez himself, it was presented to the public for the first time on 11 November 1887. The song became very popular and was quickly adopted, albeit spontaneously, as the national anthem of Colombia.\nIt was made official through Law 33 of 18 October 1920. Colombian musician Jos\u00e9 Rozo Contreras reviewed the scores and prepared the transcriptions for symphonic band, which was adopted as an official version by decree 1963 of 4 July 1946. The anthem has been performed in various versions, been the subject of attempted reforms and been widely performed in the arts.\nThe lyrics of the anthem are composed of a chorus and eleven stanzas, though it is usually sung chorus\u2013first verse\u2013chorus.\n\n",
+    "url": "https://en.wikipedia.org/wiki/National_Anthem_of_Colombia",
+    "content_length": 21102
+  },
+  "Colombian Navy": {
+    "title": "Colombian Navy",
+    "error": "page_not_found"
+  }
+}

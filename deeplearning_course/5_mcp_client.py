@@ -1,10 +1,11 @@
+import asyncio
 from mcp import ClientSession, StdioServerParameters, types
 from mcp.client.stdio import stdio_client
 
 # Create server parameters for stdio connection
 server_params = StdioServerParameters(
     command="uv", # Executable
-    args=["run", "research_server.py"], # Optional commnad line arguments
+    args=["run", "4_wikipedia_mcp_server.py"], # Optional commnad line arguments
     env=None, # Optional enviroment variable
 )
 
@@ -19,3 +20,13 @@ async def run():
 
             # List available tools
             tools = await session.list_tools()
+
+            # Chat loop
+
+            # Call a tool: this will be in the process_query method
+            result = await session.call_tool("tool-name", arguments={
+                "arg1": "value"
+            })
+
+if __name__ == "__main__":
+    asyncio.run(run())
