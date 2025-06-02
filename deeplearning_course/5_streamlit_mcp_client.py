@@ -62,21 +62,21 @@ class StreamlitMCPChatBot:
                     assistant_content.append(content)
                     
                     # Show tool usage in UI
-                    with st.expander(f"🛠️ Usando herramienta: {content.name}", expanded=True):
+                    with st.expander(f"🛠️ Using tool: {content.name}", expanded=True):
                         st.markdown(f"**Tool ID:** `{content.id}`")
-                        st.markdown("**Argumentos:**")
+                        st.markdown("**Arguments:**")
                         st.json(content.input)
                         
                         progress_placeholder = st.empty()
-                        progress_placeholder.info(f"🔄 Ejecutando {content.name}...")
+                        progress_placeholder.info(f"🔄 Executing {content.name}...")
                         
                         start_time = time.time()
                         result = await self.execute_tool(server_url, content.name, content.input)
                         elapsed = time.time() - start_time
                         
-                        progress_placeholder.success(f"✅ {content.name} completado en {elapsed:.1f}s")
+                        progress_placeholder.success(f"✅ {content.name} completed in {elapsed:.1f}s")
                         
-                        st.markdown("### Resultado:")
+                        st.markdown("### Result:")
                         try:
                             json_content = json.loads(result.content)
                             st.json(json_content)
@@ -97,7 +97,7 @@ class StreamlitMCPChatBot:
                     # Get next response
                     response = self.anthropic.messages.create(
                         max_tokens=2024,
-                        model='claude-3-5-sonnet-20241022',
+                        model='claude-3-7-sonnet-20250219',
                         tools=available_tools,
                         messages=messages
                     )
@@ -110,12 +110,12 @@ class StreamlitMCPChatBot:
 
 def main():
     st.set_page_config(
-        page_title="MCP ChatBot",
+        page_title="MCP Client",
         page_icon="🤖",
         layout="wide"
     )
     
-    st.title("🤖 MCP ChatBot con Streamlit (SSE)")
+    st.title("🤖 MCP Client (SSE)")
     
     # Initialize session state
     if 'available_tools' not in st.session_state:
@@ -126,14 +126,14 @@ def main():
     
     # Sidebar for connection and tools
     with st.sidebar:
-        st.header("🔧 Configuración MCP")
+        st.header("🔧 MCP Configuration")
         
-        server_url = st.text_input("URL del servidor MCP", st.session_state.server_url)
+        server_url = st.text_input("MCP server URL", st.session_state.server_url)
         st.session_state.server_url = server_url
         
         if not st.session_state.connected:
-            if st.button("🔌 Conectar al servidor MCP"):
-                with st.spinner("Conectando al servidor MCP..."):
+            if st.button("🔌 Connect to MCP server"):
+                with st.spinner("Connecting to MCP server..."):
                     try:
                         chatbot = StreamlitMCPChatBot()
                         tools = asyncio.run(chatbot.get_available_tools(server_url))
@@ -141,43 +141,41 @@ def main():
                         st.session_state.available_tools = tools
                         st.session_state.connected = True
                         st.session_state.chatbot = chatbot
-                        st.success("✅ Conectado exitosamente!")
+                        st.success("✅ Connected successfully!")
                         st.rerun()
                     except Exception as e:
-                        st.error(f"❌ Error al conectar: {str(e)}")
+                        st.error(f"❌ Connection error: {str(e)}")
         else:
-            st.success("✅ Conectado al servidor MCP")
+            st.success("✅ Connected to MCP server")
             
-            if st.button("🔌 Desconectar"):
+            if st.button("🔌 Disconnect"):
                 st.session_state.available_tools = []
                 st.session_state.connected = False
                 st.session_state.messages = []
                 st.session_state.chatbot = None
-                st.success("🔌 Desconectado exitosamente!")
+                st.success("🔌 Disconnected successfully!")
                 st.rerun()
             
-            st.subheader("📋 Herramientas Disponibles:")
+            st.subheader("📋 Available Tools:")
             for tool in st.session_state.available_tools:
                 with st.expander(f"🛠️ {tool['name']}"):
-                    st.write(f"**Descripción:** {tool['description']}")
+                    st.write(f"**Description:** {tool['description']}")
                     if 'properties' in tool['input_schema']:
-                        st.write("**Parámetros:**")
+                        st.write("**Parameters:**")
                         for param, details in tool['input_schema']['properties'].items():
-                            st.write(f"- `{param}`: {details.get('description', 'Sin descripción')}")
+                            st.write(f"- `{param}`: {details.get('description', 'No description')}")
     
     # Main chat interface
     if not st.session_state.connected:
-        st.info("👈 Por favor, conecta al servidor MCP usando el botón en la barra lateral para comenzar.")
+        st.info("👈 Please connect to the MCP server using the button in the sidebar to get started.")
     else:
-        st.subheader("💬 Chat")
-        
         # Display chat messages
         for message in st.session_state.messages:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
         
         # Chat input
-        if prompt := st.chat_input("Escribe tu mensaje aquí..."):
+        if prompt := st.chat_input("Type your message here..."):
             # Add user message to chat history
             st.session_state.messages.append({"role": "user", "content": prompt})
             with st.chat_message("user"):
@@ -196,7 +194,7 @@ def main():
                     st.markdown(response)
                     st.session_state.messages.append({"role": "assistant", "content": response})
                 except Exception as e:
-                    error_msg = f"❌ Error al procesar la consulta: {str(e)}"
+                    error_msg = f"❌ Error processing query: {str(e)}"
                     st.error(error_msg)
                     st.session_state.messages.append({"role": "assistant", "content": error_msg})
 

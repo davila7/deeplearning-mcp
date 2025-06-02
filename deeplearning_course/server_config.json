@@ -1,0 +1,25 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "."
+            ]
+        },
+        "Wikipedia MCP": {
+            "command": "/Users/danipower/.local/bin/uv",
+            "args": [
+                "run",
+                "--with",
+                "mcp[cli]",
+                "--with",
+                "wikipedia",
+                "mcp",
+                "run",
+                "/Users/danipower/Proyectos/Github/deeplearning-mcp/deeplearning_course/4_wikipedia_mcp_server_stdio.py"
+            ]
+        }
+    }
+}
