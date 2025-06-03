@@ -1,4 +1,3 @@
-# File: deeplearning_course/7_wikipedia_mcp_server_stdio_prompts_resources.py
 import wikipedia
 import os
 import json
@@ -6,7 +5,7 @@ from typing import List
 from mcp.server.fastmcp import FastMCP
 
 # Initialize FastMCP server
-mcp = FastMCP("Wikipedia1 MCP")
+mcp = FastMCP("Wikipedia MCP", host="0.0.0.0", port=8000)
 
 # Directory to store Wikipedia articles
 WIKI_DIR = os.path.join(os.path.dirname(__file__), "wiki_articles")
@@ -202,4 +201,4 @@ Make it engaging, educational, and fully functional with smooth animations and c
 
 if __name__ == "__main__":
     # Initialize and run the server
-    mcp.run(transport='stdio')
+    mcp.run(transport='sse')
