@@ -201,4 +201,5 @@ Make it engaging, educational, and fully functional with smooth animations and c
 
 if __name__ == "__main__":
     # Initialize and run the server
+    print('Starting server.-------')
     mcp.run(transport='sse')
