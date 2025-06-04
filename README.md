@@ -140,6 +140,7 @@ Transport Protocols Supported:
 - Build production-ready servers with Streamable HTTP
 
 ### Project Structure:
+```bash
 mcp-courses/
 ├── deeplearning_course/           # Complete MCP course materials
 │   ├── papers/                    # arXiv paper storage
@@ -148,6 +149,7 @@ mcp-courses/
 ├── main.py                        # Repository entry point
 ├── requirements.txt               # Python dependencies
 └── pyproject.toml                 # Project configuration
+```
 
 # Contributing
 Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
