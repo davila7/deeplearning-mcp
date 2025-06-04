@@ -139,15 +139,15 @@ Transport Protocols Supported:
 - Implement prompts and resources
 - Build production-ready servers with Streamable HTTP
 
-# 🛠️ Development
+### Project Structure:
 mcp-courses/
-├── deeplearning_course/          # Complete MCP course materials
-│   ├── papers/                   # arXiv paper storage
-│   ├── wiki_articles/           # Wikipedia article cache
-│   └── server_config.json       # Multi-server configuration
-├── main.py                      # Repository entry point
-├── requirements.txt             # Python dependencies
-└── pyproject.toml              # Project configuration
+├── deeplearning_course/           # Complete MCP course materials
+│   ├── papers/                    # arXiv paper storage
+│   ├── wiki_articles/             # Wikipedia article cache
+│   └── server_config.json         # Multi-server configuration
+├── main.py                        # Repository entry point
+├── requirements.txt               # Python dependencies
+└── pyproject.toml                 # Project configuration
 
 # Contributing
 Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
